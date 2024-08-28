@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil Saya</title>
+
+    <!--<link rel="stylesheet" href="Praktikum1.css">-->
+
+    <style>
+
+        body {
+
+            font-family: 'Arial', sans-serif;
+
+            color: #ffffff;
+
+            background: url('Growtopia-Night.png') no-repeat center center fixed; 
+
+            background-size: cover;
+
+            margin: 0;
+
+            padding: 0;
+
+            overflow-x: hidden;
+
+        }
+
+        .container {
+
+            max-width: 900px;
+
+            margin: auto;
+
+            padding: 30px;
+
+            background-color: rgba(0, 0, 0, 0.8); /* Hitam dengan transparansi */
+
+            border-radius: 15px;
+
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Bayangan kotak */
+
+        }
+
+        header {
+
+            text-align: center;
+
+            margin-bottom: 30px;
+
+        }
+
+        header h1 {
+
+            color: #00ccff; /* Biru muda */
+
+            font-size: 48px;
+
+            margin: 0;
+
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Bayangan teks */
+
+        }
+
+        .profile-info {
+
+            display: flex;
+
+            align-items: center;
+
+            margin-bottom: 30px;
+
+        }
+
+        .profile-pic {
+
+            width: 150px;
+
+            border-radius: 10%;
+
+            margin-right: 20px;
+
+            border: 2px solid #00ccff; /* Border biru muda */
+
+            transition: transform 0.3s; /* Transisi efek hover */
+
+        }
+
+        .profile-pic:hover {
+
+            transform: scale(1.1); /* Efek zoom saat hover */
+
+        }
+
+        .sosmed {
+
+            width: 50px; /* Mengatur lebar gambar agar tidak melebihi total 100% saat bersebelahan */
+
+            height: auto;
+
+            margin: 20px 2.5%; /* Memberikan sedikit ruang antara gambar */
+
+            border-radius: 10px;
+
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Bayangan gambar */
+
+            display: inline-block; /* Menjadikan gambar inline untuk tampil bersebelahan */
+
+            vertical-align: middle; /* Menyelaraskan vertikal gambar */
+
+            transition: transform 0.3s;   
+
+        }
+
+        .sosmed:hover {
+
+            transform: scale(1.1); /* Efek zoom saat hover */
+
+        }
+
+        table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
+            margin: 20px 0;
+
+        }
+
+        table, th, td {
+
+            border: 1px solid #00ccff; /* Biru muda */
+
+        }
+
+        th, td {
+
+            padding: 12px;
+
+            text-align: left;
+
+        }
+
+        th {
+
+            background-color: #003366; /* Biru tua */
+
+            color: #00ccff; /* Biru muda */
+
+        }
+
+        td {
+
+            color: #ffffff; /* Putih */
+
+        }
+
+        footer {
+
+            text-align: center;
+
+            margin-top: 30px;
+
+            font-size: 18px;
+
+        }
+
+        footer a {
+
+            color: #00ccff; /* Biru muda */
+
+            text-decoration: none;
+
+            transition: color 0.3s, text-decoration 0.3s; /* Transisi efek hover */
+
+        }
+
+        footer a:hover {
+
+            text-decoration: underline;
+
+            color: #ffffff; /* Putih saat hover */
+
+        }
+
+        h2 {
+
+            border-bottom: 2px solid #00ccff; /* Garis bawah biru muda */
+
+            padding-bottom: 5px;
+
+            margin-bottom: 15px;
+
+            font-size: 29px;
+
+        }
+
+        section {
+
+            margin-bottom: 30px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>Profil Evocati Sibarani</h1>
+
+        </header>
+
+
+
+        <section>
+
+            <h2>Informasi Diri</h2>
+
+            <div class="profile-info">
+
+                <img src="Evocati_Latar_Biru.jpeg" alt="Foto Profil 1" class="profile-pic">
+
+                <p>Nama saya adalah <b style="color:#00ccff">Evocati Sibarani</b>. Saya lahir dan dibesarkan di Kota Dumai, dan saat ini tinggal di Pekanbaru untuk berkuliah. Saat ini saya berkuliah di program studi Sistem Informasi, Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Riau. Saya memiliki hobi <del style="color:gray">bermain game</del> membaca dan mendengarkan musik. Di waktu luang saya, saya mempelajari <i>machine learning</i> dari dasar.</p>
+
+            </div>
+
+        </section>
+
+
+
+        <section>
+
+            <h2>Ketertarikan di Bidang Ilmu Komputer</h2>
+
+            <p>Sebagai mahasiswa <u>Ilmu Komputer</u> semester 3, saya sangat tertarik dengan dunia teknologi, khususnya di bidang <i>AI Engineering</i>. Sejak awal masuk kuliah, ketertarikan saya terhadap ilmu komputer semakin berkembang seiring dengan pemahaman saya yang lebih mendalam tentang Ilmu Komputer. Ketertarikan ini tidak hanya memotivasi saya untuk terus belajar, tetapi juga menginspirasi saya untuk mengejar karier sebagai <i>AI Engineer</i> di masa depan.</p>
+
+        </section>
+
+
+
+        <section>
+
+            <h2>Riwayat Pendidikan</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th style="width:15%;">Tahun</th>
+
+                        <th style="width:25%;">Jenjang</th>
+
+                        <th>Nama Sekolah/Institusi</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>2011-2017</td>
+
+                        <td>SD</td>
+
+                        <td>SDN 007 Teluk Binjai</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>2017-2020</td>
+
+                        <td>SMP</td>
+
+                        <td>SMPN 1 Dumai</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>2020-2023</td>
+
+                        <td>SMA</td>
+
+                        <td>SMAN 3 Dumai</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>2023-Sekarang</td>
+
+                        <td>S1 | Sistem Informasi</td>
+
+                        <td>Universitas Riau</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+
+        <section>
+
+            <h2>Media Sosial</h2>
+
+            <a href="https://www.instagram.com/evocati_sbr" target="_blank">
+
+                <img src="Instagram_logo.svg" alt="Instagram" class="sosmed">
+
+            </a>
+
+            <a href="https://www.facebook.com/evocati.sibarani25" target="_blank">
+
+                <img src="Facebook_logo.svg" alt="Facebook" class="sosmed">
+
+            </a>
+
+            <a href="https://wa.me/082385213040" target="_blank">
+
+                <img src="WhatsApp_logo.webp" alt="WhatsApp" class="sosmed">
+
+            </a>
+
+        </section>
+
+
+
+        <footer>
+
+            <p>Hubungi saya melalui email: <a href="mailto:sibaranievocati@gmail.com">sibaranievocati@gmail.com</a></p>
+
+            <p>Kunjungi  <a href="https://evocatisibarani.blogspot.com" target="_blank">blogspot</a> saya.</p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
